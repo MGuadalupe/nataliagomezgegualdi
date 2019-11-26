@@ -1,0 +1,54 @@
+.headerContent {
+	width: 450px;
+}
+.headerContent p {
+	text-transform: uppercase;
+}
+.bg-cover {
+	background: url('../img/img-principal.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.header img {
+	width: 100%;
+	height: auto;
+}
+
+
+.masthead {
+	background: rgba(0, 0, 0, 0.69);
+	background: -moz-linear-gradient(
+		left,
+		rgba(0, 0, 0, 0.69) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	background: -webkit-gradient(
+		left top,
+		right top,
+		color-stop(0%, rgba(0, 0, 0, 0.69)),
+		color-stop(100%, rgba(0, 0, 0, 0))
+	);
+	background: -webkit-linear-gradient(
+		left,
+		rgba(0, 0, 0, 0.69) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	background: -o-linear-gradient(
+		left,
+		rgba(0, 0, 0, 0.69) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	background: -ms-linear-gradient(
+		left,
+		rgba(0, 0, 0, 0.69) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.69) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	z-index: 0;
+}
