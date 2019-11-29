@@ -16,6 +16,7 @@
 	height: auto;
 }
 
+
 .masthead {
 	background: rgba(0, 0, 0, 0.69);
 	background: -moz-linear-gradient(
@@ -52,18 +53,19 @@
 	z-index: 0;
 }
 
+
 .diptico {
-	width: 100%;
-	height: 100vh;
+	width:100%;
+	height:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .btn-transparent {
-	margin-top: 50%;
-	background-color: rgba(255, 255, 255, 0.4);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-color: black;
+	margin-top:50%;
+	background-color:rgba(255,255,255, 0.4);
+	border: 1px solid rgba(255,255,255, 0.1);
+	border-color:black;
 	padding: 10px 70px;
 	color: black;
 	font-size: 20px;
@@ -71,103 +73,61 @@
 
 .contacto {
 	height: 75vh;
-}
-.contactoBg {
 	background-repeat: no-repeat;
 	background-size: auto 130%;
-	background-image: linear-gradient(
-			90deg,
-			rgba(255, 255, 255, 0) 8%,
-			rgba(255, 255, 255, 1) 39%
-		),
-		url('../img/img-footer.jpg');
 }
-/*  */
+
 .footer-contacto {
 	height: 25vh;
 }
 
-.footer-contacto img {
-	width: auto;
-	height: 90px;
+.footer-contacto .medios {
+	margin-top: 80px;
 }
 
 .btn-enviar {
 	padding: 10px 50px;
 	background-color: #ffffff;
-	-webkit-box-shadow: 3px 5px 14px -2px rgba(0, 0, 0, 0.53);
-	-moz-box-shadow: 3px 5px 14px -2px rgba(0, 0, 0, 0.53);
-	box-shadow: 3px 5px 14px -2px rgba(0, 0, 0, 0.53);
+	-webkit-box-shadow: 3px 5px 14px -2px rgba(0,0,0,0.53);
+	-moz-box-shadow: 3px 5px 14px -2px rgba(0,0,0,0.53);
+	box-shadow: 3px 5px 14px -2px rgba(0,0,0,0.53);
 }
 
-.wrapper {
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-/* h2{
+
+
+.wrapper{
+	width:100%;
+	padding-top: 20px;
+	text-align:center;
+  }
+  /* h2{
 	font-family:sans-serif;
 	color:#fff;
   } */
-.carousel {
-	width: 90%;
-	margin: 0px auto;
-}
-.slick-slide {
-	margin: 10px;
-}
-.slick-slide img {
-	width: 100%;
+  .carousel{
+	width:90%;
+	margin:0px auto;
+  }
+  .slick-slide{
+	margin:10px;
+  }
+  .slick-slide img{
+	width:100%;
 	border: 2px solid #fff;
-}
+  }
 
-.slick-prev:before,
-.slick-next:before {
-	color: #ccc !important;
-}
-.slideBg1,
-.slideBg2,
-.slideBg3,
-.slideBg4,
-.slideBg5,
-.slideBg6 {
-	height: 500px;
+
+
+  /* SOBRE MI */
+
+  .vh-70 {
+	  height: 70vh;
+  }
+
+  .bg-sobre-mi {
+	background: url('../img/img-bio.jpg');
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
-	display: flex !important;
-	flex-direction: column;
-	justify-content: flex-end;
-	border: 1px #ccc solid;
-}
-.slideBg1,
-.slideBg4 {
-	background-position: top;
-	background-image: url('../img/img-actriz.jpg');
-}
-.slideBg2,
-.slideBg5 {
-	background-image: url('../img/img-bio.jpg');
-}
-.slideBg3,
-.slideBg6 {
-	background-position: left;
-	background-image: url('../img/img-galeria-portada.jpg');
-}
-.sliderText {
-	margin-bottom: 0;
-	width: 100%;
-	padding: 20px 0;
-	background: rgba(255, 255, 255, 1);
-}
-
-@media (max-width: 768px) {
-	.diptico {
-		max-height: 500px !important;
-	}
-	.contactoBg {
-		background: #ffffff;
-	}
+	background-position: 0px -350px;
+	height: 70vh;
 }

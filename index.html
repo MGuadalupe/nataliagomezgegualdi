@@ -77,7 +77,7 @@
           <p>Actriz y curvy model. Activista de la buena energía.</p>
           <p>Me gusta inspirar a otras mujeres para que acepten sus cuerpos tal como son y que se sientan plenas poniendo el foco en la actitud.</p>
           
-          <button class="btn bg-primary text-white">¡Conoceme!</button>
+          <a href='sobre-mi.html' class="btn bg-primary text-white">¡Conoceme!</a>
           <button class="btn  btn-light mx-3">Ver video</button>
         </div>
        </div>
@@ -85,33 +85,32 @@
   </section>
   <section>
       <div class="row ">
-        <div class="col-md-6 diptico text-center align-middle" style="background-image: url(img/img-modelo-1.jpg); background-position: bottom;">
+        <div class="col-lg-6 diptico text-center align-middle vh-100" style="background-image: url(img/img-modelo-1.jpg); background-position: bottom;">
           <button class="btn  btn-transparent mx-3 align-middle">Modelo</button>
         </div>
-        <div class="col-md-6 diptico text-center" style="background-image: url(img/img-actriz.jpg); background-position: top;">
+        <div class="col-lg-6 diptico text-center vh-100" style="background-image: url(img/img-actriz.jpg); background-position: top;">
           <button class="btn  btn-transparent mx-3 ">Actriz</button>
         </div>
   </section>
-  <section class="container">
+  <section>
     <div class='row vh-100'>
         <div class="wrapper col-lg-12">
-            <h2 class="pb-3">Galería<h2>
+            <h2>Galería<h2>
           <div class="carousel">
-            <div class="slideBg1"><p class="sliderText">Lookbooks</p></div>
-            <div class="slideBg2"><p class="sliderText">Catálogos</p></div>
-            <div class="slideBg3"><p class="sliderText">Campaña</p></div>
-            <div class="slideBg4"><p class="sliderText">Lookbooks</p></div>
-            <div class="slideBg5"><p class="sliderText">Catálogos</p></div>
-            <div class="slideBg6"><p class="sliderText">Campaña</p></div>
-            
+            <div><img src="http://lorempixel.com/200/200/nature/"></div>
+            <div><img src="http://lorempixel.com/200/200/fashion/"></div>
+            <div><img src="http://lorempixel.com/200/200/sports/"></div>
+            <div><img src="http://lorempixel.com/200/200/animal/"></div>
+            <div><img src="http://lorempixel.com/200/200/abstract/"></div>
+            <div><img src="http://lorempixel.com/200/200/people/"></div>
           </div>
         </div>
     </div>
     
   </section>
-  <section class="contacto">
-    <div class="row contactoBg" >
-      <div class='col-md-6 offset-md-6'>
+  <section>
+    <div class="row contacto" style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1)), url(img/img-footer.jpg);"  >
+      <div class='col-lg-6 offset-lg-6'>
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <h2 class='mt-4'>¡Contactame!</h2>
               <div class="control-group">
@@ -145,16 +144,20 @@
       </div>
 
     </div>
-    <div class="footer-contacto row justify-content-around" >
-        <div class='col-lg-6 d-flex justify-content-center align-items-center'>
-          <img src="img/footerName.svg" alt="">
+    <div class="footer-contacto row" >
+        <div class='col-lg-8'>
         </div>
-        
-        <div class='col-lg-3 d-flex justify-content-around align-items-center'>
-          <a>Facebook</a>
-          <a>Instagram</a>
-          <a>Youtube</a>
-          
+        <div class='col-lg-4'>
+          <div class="row medios">
+            <div class="col-3">
+              <a>Facebook</a>
+            </div>
+            <div class="col-3">
+                <a>Instagram</a>
+            </div>
+            <div class="col-3">
+                <a>Youtube</a>
+            </div>
           </div>
         </div>
     </div>
@@ -558,25 +561,12 @@
  <script>
     $(document).ready(function() {
       $('.carousel').slick({
-        infinite: true, 
-        slidesToShow: 3, 
-        slidesToScroll: 3,
-        adaptiveHeight: true,
-        responsive: [
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }]
+      dots:false,
+      arrows: true,
+      centerMode: false,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 3
       });
   });
   ;
