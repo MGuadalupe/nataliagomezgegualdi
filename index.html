@@ -14,6 +14,11 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
+
+  <link rel="stylesheet" href="js/slick-master/slick/slick.css">
+  <link rel="stylesheet" href="js/slick-master/slick/slick-theme.css">
+
+
 </head>
 
 <body id="page-top">
@@ -78,15 +83,92 @@
        </div>
     </div>
   </section>
+  <section>
+      <div class="row ">
+        <div class="col-lg-6 diptico text-center align-middle vh-100" style="background-image: url(img/img-modelo-1.jpg); background-position: bottom;">
+          <button class="btn  btn-transparent mx-3 align-middle">Modelo</button>
+        </div>
+        <div class="col-lg-6 diptico text-center vh-100" style="background-image: url(img/img-actriz.jpg); background-position: top;">
+          <button class="btn  btn-transparent mx-3 ">Actriz</button>
+        </div>
+  </section>
+  <section>
+    <div class='row vh-100'>
+        <div class="wrapper col-lg-12">
+            <h2>Galería<h2>
+          <div class="carousel">
+            <div><img src="http://lorempixel.com/200/200/nature/"></div>
+            <div><img src="http://lorempixel.com/200/200/fashion/"></div>
+            <div><img src="http://lorempixel.com/200/200/sports/"></div>
+            <div><img src="http://lorempixel.com/200/200/animal/"></div>
+            <div><img src="http://lorempixel.com/200/200/abstract/"></div>
+            <div><img src="http://lorempixel.com/200/200/people/"></div>
+          </div>
+        </div>
+    </div>
+    
+  </section>
+  <section>
+    <div class="row contacto" style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1)), url(img/img-footer.jpg);"  >
+      <div class='col-lg-6 offset-lg-6'>
+          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <h2 class='mt-4'>¡Contactame!</h2>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Nombre</label>
+                  <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresá tu nombre">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Apellido</label>
+                  <input class="form-control" id="surname" type="text" placeholder="Apellido" required="required" data-validation-required-message="Por favor ingresá tu apellido">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Mensaje</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingresá un mensaje"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-enviar btn-xl" id="sendMessageButton">Enviar</button>
+              </div>
+            </form>
+      </div>
 
-  <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
+    </div>
+    <div class="footer-contacto row" >
+        <div class='col-lg-8'>
+        </div>
+        <div class='col-lg-4'>
+          <div class="row medios">
+            <div class="col-3">
+              <a>Facebook</a>
+            </div>
+            <div class="col-3">
+                <a>Instagram</a>
+            </div>
+            <div class="col-3">
+                <a>Youtube</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <!-- <section class="page-section bg-primary text-white mb-0" id="about">
     <div class="container">
 
-      <!-- About Section Heading -->
+  
       <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
 
-      <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
@@ -95,7 +177,7 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- About Section Content -->
+
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
@@ -105,7 +187,6 @@
         </div>
       </div>
 
-      <!-- About Section Button -->
       <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
           <i class="fas fa-download mr-2"></i>
@@ -114,16 +195,14 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
+
+  <!-- <section class="page-section" id="contact">
     <div class="container">
 
-      <!-- Contact Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
 
-      <!-- Icon Divider -->
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
@@ -132,10 +211,8 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- Contact Section Form -->
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -175,21 +252,19 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
-  <!-- Footer -->
-  <footer class="footer text-center">
+  <!-- <footer class="footer text-center">
     <div class="container">
       <div class="row">
 
-        <!-- Footer Location -->
+
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
           <p class="lead mb-0">2215 John Daniel Drive
             <br>Clark, MO 65243</p>
         </div>
 
-        <!-- Footer Social Icons -->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
           <a class="btn btn-outline-light btn-social mx-1" href="#">
@@ -206,7 +281,6 @@
           </a>
         </div>
 
-        <!-- Footer About Text -->
         <div class="col-lg-4">
           <h4 class="text-uppercase mb-4">About Freelancer</h4>
           <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
@@ -215,23 +289,22 @@
 
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
+
+  <!-- <section class="copyright py-4 text-center text-white">
     <div class="container">
       <small>Copyright &copy; Your Website 2019</small>
     </div>
   </section>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  
   <div class="scroll-to-top d-lg-none position-fixed ">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
       <i class="fa fa-chevron-up"></i>
     </a>
-  </div>
+  </div> -->
 
-  <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
@@ -481,6 +554,21 @@
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
  <script src="js/custom.js"></script>
+
+   <!-- Slider -->
+
+ <script src="js/slick-master/slick/slick.js"></script>
+ <script>
+    $(document).ready(function() {
+      $('.carousel').slick({
+      slidesToShow: 3,
+      dots:false,
+      arrows: true,
+      centerMode: true,
+      });
+  });
+  ;
+  </script>
 
 </body>
 
