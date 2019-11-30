@@ -51,7 +51,12 @@
 	);
 	z-index: 0;
 }
-
+.section {
+	margin-top: 80px;
+}
+.aboutMeHeader {
+	padding-top: calc(3rem + 74px) !important;
+}
 .diptico {
 	width: 100%;
 	height: 100vh;
@@ -182,9 +187,14 @@
 }
 
 .bg-sobre-mi {
-background-image: url("../img/img-bio.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 0px -350px;
-height: 70vh;
+	background-image: url('../img/img-bio.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -250px;
+	height: 70vh;
+}
+@media (max-width: 1090px) {
+	.bg-sobre-mi {
+		background-position: top left;
+	}
 }
