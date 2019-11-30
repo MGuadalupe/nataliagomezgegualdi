@@ -65,8 +65,11 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container-fluid">
-			<header class="row text-white bg-sobre-mi">
+		<div class="container-fluid headerActressContainer">
+			<header class="row text-white bg-actress">
+				<video autoplay muted loop class="videoActress">
+					<source src="img/actress-bg.mp4" type="video/mp4" />
+				</video>
 				<div class=" w-100 masthead headerContainer">
 					<div class="container d-flex flex-column ">
 						<div class="headerContent">
@@ -76,7 +79,13 @@
 								alt="Natalia Gómez Gegualdi"
 								title="Natalia Gómez Gegualdi"
 							/>
+							<h3 class="text-center">Actriz</h3>
 						</div>
+					</div>
+					<div class="d-flex justify-content-center align-items-end">
+						<button class="btn bg-primary text-white">
+							<i class="fas fa-play mr-3"></i>Reel completo
+						</button>
 					</div>
 				</div>
 			</header>
@@ -85,80 +94,33 @@
 		<section class="container section ">
 			<div class="row">
 				<div class="col offset-2">
-					<div class="d-flex mb-4">
-						<div class="barTitle"></div>
-						<h4>Sobre mi</h4>
-					</div>
-					<h2>“Quien tiene magia no Necesita trucos”</h2>
 					<p>
-						Soy Natalia. Inquieta, curiosa, apasionada en cada cosa que
-						emprendo. Me gusta dejar todo cuando hago producciones, pasarela,
-						cuando estoy en el escenario o rodando alguna escena.
+						Siempre estuve relacionada con el arte: a los 3 años comencé mi
+						formación en escuela de ballet de danzas clásicas, donde todos los
+						años rendía exámenes internacionales para pasar de nivel. Tuve la
+						suerte de tener una gran maestra como Carla del Piero, y luego seguí
+						formándome fui a la escuela de Rodolfo Olguin y Noemí Cohelo.
 					</p>
 					<p>
-						Soy pampeana, viví en Río Gallegos pero a los 17 años me vine a
-						Buenos Aires a estudiar Ceremonial y Protocolo.
-					</p>
-					<p>
-						Tiempo después de recibirme me metí en Relaciones Públicas y Derecho
-						pero descubrí que ese no era mi camino y decidí apostar por mi
-						formación artística.
-					</p>
-					<p>
-						Estudié, me especialicé y actualmente trabajo como modelo y actriz
-						en diversos proyectos.
-					</p>
-					<p>
-						Siempre me sentí fuera del molde. Creo en la sabiduría que cada uno
-						tiene y tengo afinidad por las terapias holísticas, por eso decidí
-						también abrirme paso con otros conocimientos: soy reflexologa,
-						maestra de reiki, terapista energética, trabajo con cuencos
-						tibetanos. También me involucré con la astrología y medicina
-						ayurvédica.
-					</p>
-					<p>
-						Desde todo lo que hago, promuevo el paradigma de los cuerpos reales,
-						impulso a las mujeres a derribar prejuicios y barreras. La
-						diversidad y la versatilidad son mis motores.<b>
-							A partir de ahí, siempre al infinito y más allá!</b
-						>
+						En mis años de secundaria en Gallegos pertenecí a un grupo de
+						teatro: actuábamos en obras cada fin de semana en el Teatro
+						Municipal de la ciudad y viajábamos por la provincia para participar
+						de festivales juveniles. Ahí empezó todo.
 					</p>
 				</div>
 				<div class="col-2"></div>
 			</div>
-			<div class="row">
-				<div class="col-2 verticalText"><h3>Modelo</h3></div>
-				<div class="col">
-					<p class="highlightText">
-						Participé en campañas de primeras marcas y fui la imagen de muchas
-						de ellas como cara visible del nuevo paradigma de mujer real.
-					</p>
-					<p>También hice campañas, catálogos, editoriales y lookbooks.</p>
-					<p>
-						Compartí mi pasión dando clases de pasarela en la escuela de
-						PlusModel Argentina.
-					</p>
-					<button>¡Ver más!</button>
-					<hr style="border-top: 1px solid #000;" />
-				</div>
-				<div class="col-lg-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-2 verticalText"><h3>Modelo</h3></div>
-				<div class="col">
-					<p class="highlightText">
-						Participé en campañas de primeras marcas y fui la imagen de muchas
-						de ellas como cara visible del nuevo paradigma de mujer real.
-					</p>
-					<p>También hice campañas, catálogos, editoriales y lookbooks.</p>
-					<p>
-						Compartí mi pasión dando clases de pasarela en la escuela de
-						PlusModel Argentina.
-					</p>
-					<button>¡Ver más!</button>
-					<hr style="border-top: 1px solid #000;" />
-				</div>
-				<div class="col-lg-2"></div>
+		</section>
+		<section class="container">
+			<div class="d-flex align-items-center singularVideo">
+				<video autoplay muted loop>
+					<source src="img/actress-bg.mp4" type="video/mp4" />
+				</video>
+				<h3>
+					Acá podemos hacer alguna mención a la participación de chueco en linea
+					y mostrarlo a el. Puede ser en un destacado si para Natalia es
+					importante
+				</h3>
 			</div>
 		</section>
 		<section class="container">
@@ -204,3 +166,28 @@
 		<script src="js/custom.js"></script>
 	</body>
 </html>
+<style>
+	.headerActressContainer {
+		padding-bottom: 80px;
+	}
+	.bg-actress {
+		height: 70vh;
+	}
+	.videoActress {
+		position: absolute;
+		right: 0;
+		bottom: 200px;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.headerContainer button {
+		margin-top: 120px;
+		font-size: 2em;
+		padding: 10px 40px;
+	}
+	.singularVideo video,
+	.singularVideo h3 {
+		width: 50%;
+		padding: 30px 20px;
+	}
+</style>
