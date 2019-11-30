@@ -218,15 +218,26 @@
 	background-color: rgba(78, 128, 185, 0.1);
 }
 
+hr {
+	border-top: 1px solid #1F1D1C;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.botonera-modelo {
+	padding-top:25px;
+	padding-bottom:25px;
+}
 
 .botonera-modelo .btn {
-	margin-top:35px;
-	margin-bottom:35px;
+	margin-top:10px;
+	margin-bottom:10px;
 	border-radius: 30px;
 	box-shadow: none;
 	border: 1.2px solid #2E8FFF;
 	width: 100%;
 	font-size: 14px;
+	background-color: #ffffff;
 }
 
 .trabajos-modelo .job-title{
@@ -241,41 +252,20 @@
 
 /* Carousel de marcas */
 
-.marcaBg1,
-.marcaBg2,
-.marcaBg3,
-.marcaBg4,
-.marcaBg5,
-.marcaBg6 {
-	height: 230px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* display: flex !important;
-	flex-direction: column;
-	justify-content: flex-end; */
+.marcaimg
+{
+	/* height: 230px; */
+	width: auto;
 	
 }
-.marcaBg1 {
-	background-image: url('../img/marcas/marca01.jpg');
-}
-.marcaBg2 {
-	background-image: url('../img/marcas/marca02.jpg');
-}
-.marcaBg3 {
-	background-image: url('../img/marcas/marca03.jpg');
-}
-.marcaBg4 {
-	background-image: url('../img/marcas/marca04.jpg');
-}
-.marcaBg5 {
-	background-image: url('../img/marcas/marca05.jpg');
-}
-
-
 .marcas-wrapper .slick-dots {
 	text-align: left;
 }
+
+
+
+
+
 .aboutMe h2 {
 	text-transform: uppercase;
 	color: rgba(78, 128, 185, 0.5);
