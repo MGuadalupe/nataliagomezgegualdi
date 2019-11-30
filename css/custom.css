@@ -1,6 +1,9 @@
 .headerContent {
 	width: 450px;
 }
+.colorText {
+	color: #5793d3;
+}
 .headerContent p {
 	text-transform: uppercase;
 }
@@ -178,9 +181,7 @@
 	}
 }
 
-
-
-  /* SOBRE MI */
+/* SOBRE MI */
 
 .vh-70 {
 	height: 70vh;
@@ -199,9 +200,9 @@
 	}
 }
 
-  /* MODELO*/
+/* MODELO*/
 
-  .bg-modelo {
+.bg-modelo {
 	background-image: url('../img/img-modelo.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -218,22 +219,21 @@
 	background-color: rgba(78, 128, 185, 0.1);
 }
 
-
 .botonera-modelo .btn {
-	margin-top:35px;
-	margin-bottom:35px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	border-radius: 30px;
 	box-shadow: none;
-	border: 1.2px solid #2E8FFF;
+	border: 1.2px solid #2e8fff;
 	width: 100%;
 	font-size: 14px;
 }
 
-.trabajos-modelo .job-title{
-	color: #5793D3;
+.trabajos-modelo .job-title {
+	color: #5793d3;
 }
 
-.trabajos-modelo .job-desc{
+.trabajos-modelo .job-desc {
 	display: inline-block;
 	line-height: 1.2;
 	font-size: 12px;
@@ -254,7 +254,6 @@
 	/* display: flex !important;
 	flex-direction: column;
 	justify-content: flex-end; */
-	
 }
 .marcaBg1 {
 	background-image: url('../img/marcas/marca01.jpg');
@@ -271,7 +270,6 @@
 .marcaBg5 {
 	background-image: url('../img/marcas/marca05.jpg');
 }
-
 
 .marcas-wrapper .slick-dots {
 	text-align: left;
@@ -298,4 +296,8 @@
 }
 .verticalText h3 {
 	text-transform: uppercase;
+}
+.cineImg {
+	width: 100%;
+	height: auto;
 }
