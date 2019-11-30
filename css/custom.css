@@ -156,6 +156,7 @@
 	background-position: left;
 	background-image: url('../img/img-galeria-portada.jpg');
 }
+
 .sliderText {
 	margin-bottom: 0;
 	width: 100%;
@@ -170,4 +171,18 @@
 	.contactoBg {
 		background: #ffffff;
 	}
+}
+
+  /* SOBRE MI */
+
+.vh-70 {
+	height: 70vh;
+}
+
+.bg-sobre-mi {
+background-image: url("../img/img-bio.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0px -350px;
+height: 70vh;
 }
