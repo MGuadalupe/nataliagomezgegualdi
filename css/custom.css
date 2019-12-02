@@ -304,6 +304,49 @@ hr {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
+
+.py-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.py-25 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 .text-grey {
 	color: rgba(31, 29, 28, 0.6);
+}
+.headerActressContainer {
+	padding-bottom: 80px;
+}
+.bg-actress {
+	height: 70vh;
+}
+.videoActress {
+	position: absolute;
+	right: 0;
+	bottom: 200px;
+	min-width: 100%;
+	min-height: 100%;
+}
+.headerContainer button {
+	margin-top: 120px;
+	font-size: 2em;
+	padding: 10px 40px;
+}
+.singularVideo video,
+.singularVideo h3 {
+	width: 50%;
+	padding: 30px 20px;
+}
+.footerName {
+	width: 350px;
+	padding-top: 20px;
+}
+.social {
+	margin-top: -30px;
+}
+
+.textAboutMe {
+	max-width: 1100px;
 }
