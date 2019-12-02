@@ -15,6 +15,10 @@ body {
 	font-family: "scala sans";
 }
 
+section p {
+	font-size: 1.25rem;
+}
+
 .btn {
 	font-family: "futura medium bt";
 }
