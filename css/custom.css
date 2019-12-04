@@ -9,18 +9,22 @@
   @font-face {
 	font-family: "scala sans";
 	src: url("../fonts/ScalaSans-Regular.otf");
+	
   }
 
 body {
 	font-family: "scala sans";
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 }
 
 section p {
 	font-size: 1.25rem;
 }
 
-.btn {
+.btn, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: "futura medium bt";
+	font-weight: 500;
 }
 
 
