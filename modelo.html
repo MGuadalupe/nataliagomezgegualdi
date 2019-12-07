@@ -79,7 +79,7 @@
 							alt="Natalia Gómez Gegualdi"
 							title="Natalia Gómez Gegualdi"
 						/>
-						<span class="text-center header-sector">Modelo</span>
+						<h3 class="text-center section-title">Modelo</h3>
 					</div>
 				</div>
 			</div>
@@ -127,7 +127,7 @@
 		</section>
 		<section class="marcas-wrapper">
 			<div class="row">
-				<div class="wrapper offset-2 col-lg-8">
+				<div class="wrapper offset-lg-2 col-lg-8">
 					<div class="marcas">
 						<div class="marcaimg">
 							<img src="img/marcas/marca01.jpg" style="opacity: 0.8" alt="" />
@@ -171,13 +171,22 @@
 						<div class="marcaimg">
 							<img
 								src="img/marcas/marca05.jpg"
-								style="margin-top: 70px; opacity: 0.6"
+								style="margin-top: 50px; opacity: 0.6"
 								alt=""
 							/>
-						</div>
+						</div>	
 					</div>
 				</div>
+					
 			</div>
+			<div class="container">
+					<div class="row">
+						<div class="wrapper offset-2 col-lg-2  text-right">
+							<a  href='modelo.html' class='btn btn-vermas'>¡Ver más!</a>
+						</div>
+					</div>	
+			</div>
+			
 		</section>
 		<div class="container">
 			<div class="row">
@@ -259,12 +268,12 @@
 			<div class="row mb-5">
 				<div class="wrapper col-lg-12">
 					<div class="carousel">
-						<div class="slideBg1"><p class="sliderText">Lookbooks</p></div>
-						<div class="slideBg2"><p class="sliderText">Catálogos</p></div>
-						<div class="slideBg3"><p class="sliderText">Campaña</p></div>
-						<div class="slideBg4"><p class="sliderText">Lookbooks</p></div>
-						<div class="slideBg5"><p class="sliderText">Catálogos</p></div>
-						<div class="slideBg6"><p class="sliderText">Campaña</p></div>
+						<div class="slideBg1"><p class="sliderText">LOOKBOOKS</p></div>
+						<div class="slideBg2"><p class="sliderText">CATÁLOGOS</p></div>
+						<div class="slideBg3"><p class="sliderText">CAMPAÑA</p></div>
+						<div class="slideBg4"><p class="sliderText">LOOKBOOKS</p></div>
+						<div class="slideBg5"><p class="sliderText">CATÁLOGOS</p></div>
+						<div class="slideBg6"><p class="sliderText">CAMPAÑA</p></div>
 					</div>
 				</div>
 			</div>
@@ -276,17 +285,17 @@
 				</div>
 				<div class="col-3"></div>
 			</div>
-			<div class="row py-50">
+			<div class="row pt-4 pb-5">
 				<div class="col offset-2">
 					<h3 class="text-center pt-3 pb-5">Podés ver más de mí en:</h3>
 					<div class="d-flex justify-content-center align-items-center">
 						<div
-							class="d-flex justify-content-around align-items-center"
+							class="social-iconos d-flex justify-content-around align-items-center"
 							style="width:400px;"
 						>
-							<i class="fab fa-facebook-f fa-3x text-grey"></i>
-							<i class="fab fa-instagram fa-3x text-grey"></i>
-							<i class="fab fa-youtube fa-3x text-grey"></i>
+						<a href=""><i class="fab fa-facebook-f fa-3x text-grey"></i></a> 
+						<a href=""><i class="fab fa-instagram fa-3x text-grey"></i></a>
+						<a href=""><i class="fab fa-youtube fa-3x text-grey"></i></a>
 						</div>
 					</div>
 				</div>
@@ -369,19 +378,31 @@
 					adaptiveHeight: true,
 					responsive: [
 						{
-							breakpoint: 1100,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 2
-							}
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+							infinite: true,
+							dots: true
+						}
 						},
 						{
-							breakpoint: 800,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1
-							}
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
 						}
+						},
+						{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+						}
+						// You can unslick at a given breakpoint now by adding:
+						// settings: "unslick"
+						// instead of a settings object
 					]
 				})
 			})

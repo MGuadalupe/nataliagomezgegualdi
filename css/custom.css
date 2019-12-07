@@ -27,10 +27,21 @@ section p {
 	font-weight: 500;
 }
 
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+	color:#5793D3;
+}
 
 .headerContent {
 	width: 450px;
 }
+
+.section-title {
+	font-family: "futura medium bt";
+	font-weight: 500;
+	font-size: 38px;
+	margin-top:30px;
+}
+
 .colorText {
 	color: #5793d3;
 }
@@ -309,6 +320,8 @@ hr {
 .btn-vermas {
 	background-color: #5793D3;
 	color: white;
+	margin-top:30px;
+	margin-bottom: 35px;
 	padding-left:40px;
 	padding-right:40px;
 }
@@ -332,19 +345,18 @@ hr {
 	color: #4e80b9;
 }
 .verticalText {
-	transform: rotate(-90deg);
+	justify-content: flex-start;
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	margin-bottom: 80px;
 }
 
 .verticalText h3 {
-	font-family: "futura medium bt", medium;
 	letter-spacing: 7px;
 	text-transform: uppercase;
 	font-size: 35px;
-	margin-bottom:45px;
+	margin-bottom: 5px;
+	transform: rotate(-90deg);
+	margin-top: 100px;
+
 }
 
 .cineImg {
@@ -361,6 +373,11 @@ hr {
 .py-100 {
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+.py-40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .py-50 {
@@ -405,6 +422,28 @@ hr {
 	margin-top: -30px;
 }
 
+.social-iconos a:hover i{
+	color: #5793D3;
+}
+
 .textAboutMe {
 	max-width: 1100px;
+}
+
+
+@media (max-width: 1199px) and (min-width: 991px)   {
+	.botonera-modelo .btn {
+		height: 56px;
+	}
+}
+
+
+/* GALERIA*/
+
+.bg-galeria {
+	background-image: url('../img/img-galeria-portada.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70vh;
 }
