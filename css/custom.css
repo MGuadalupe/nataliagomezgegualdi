@@ -1,32 +1,42 @@
 @font-face {
-	font-family: "futura medium bt";
-	src: url("../fonts/futura medium bt.ttf");
-  }
-  @font-face {
-	font-family: "futura condensed";
-	src: url("../fonts/Futura Condensed Extra Bold.otf");
-  }
-  @font-face {
-	font-family: "scala sans";
-	src: url("../fonts/ScalaSans-Regular.otf");
-	
-  }
+	font-family: 'futura medium bt';
+	src: url('../fonts/futura medium bt.ttf');
+}
+@font-face {
+	font-family: 'futura condensed';
+	src: url('../fonts/Futura Condensed Extra Bold.otf');
+}
+@font-face {
+	font-family: 'scala sans';
+	src: url('../fonts/ScalaSans-Regular.otf');
+}
 
 body {
-	font-family: "scala sans";
+	font-family: 'scala sans';
 	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 section p {
 	font-size: 1.25rem;
 }
 
-.btn, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "futura medium bt";
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: 'futura medium bt';
 	font-weight: 500;
 }
-
 
 .headerContent {
 	width: 450px;
@@ -108,17 +118,18 @@ section p {
 }
 
 .contacto {
-	height: 75vh;
+	min-height: 75vh;
+	height: auto;x
 }
 .contactoBg {
 	background-repeat: no-repeat;
 	background-size: auto 130%;
 	background-image: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0) 8%,
-		rgba(255, 255, 255, 1) 39%
-	),
-	url('../img/img-footer.jpg');
+			90deg,
+			rgba(255, 255, 255, 0) 8%,
+			rgba(255, 255, 255, 1) 39%
+		),
+		url('../img/img-footer.jpg');
 }
 /*  */
 .footer-contacto {
@@ -202,22 +213,13 @@ section p {
 	background: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 768px) {
-	.diptico {
-		max-height: 500px !important;
-	}
-	.contactoBg {
-		background: #ffffff;
-	}
-}
-
 /* SOBRE MI */
 
 .txt-sobre-mi {
 	text-transform: uppercase;
-	font-family: "futura medium bt";
+	font-family: 'futura medium bt';
 	letter-spacing: 4px;
-	color: #1F1D1C;
+	color: #1f1d1c;
 	font-size: 18px;
 }
 
@@ -226,7 +228,7 @@ section p {
 }
 
 .sobre-mi-frase {
-	font-family: "futura condensed";
+	font-family: 'futura condensed';
 	letter-spacing: 2px;
 }
 
@@ -307,10 +309,10 @@ hr {
 /* FOOTER COMPARTIDO */
 
 .btn-vermas {
-	background-color: #5793D3;
+	background-color: #5793d3;
 	color: white;
-	padding-left:40px;
-	padding-right:40px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .btn-vermas:hover {
@@ -340,11 +342,11 @@ hr {
 }
 
 .verticalText h3 {
-	font-family: "futura medium bt", medium;
+	font-family: 'futura medium bt', medium;
 	letter-spacing: 7px;
 	text-transform: uppercase;
 	font-size: 35px;
-	margin-bottom:45px;
+	margin-bottom: 45px;
 }
 
 .cineImg {
@@ -407,4 +409,79 @@ hr {
 
 .textAboutMe {
 	max-width: 1100px;
+}
+.meContainer {
+	height: 100vh;
+}
+footer hr{
+	display: none;
+	border-top: 1px solid #000;
+}
+@media (max-width: 991px) {
+	.masthead {
+		padding-top: 40vh;
+	}
+	.headerContent > div {
+		margin-top: 10px !important;
+	}
+	.headerContent {
+		width: 350px;
+	}
+	.headerContent img {
+		width: 100%;
+	}
+	.bg-cover {
+		background-image: url('../img/img-principal-mobile.jpg');
+	}
+}
+
+@media (max-width: 768px) {
+	.meContainer {
+		min-height: 75vh;
+		height: auto;
+	}
+	.meText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.meText .btn {
+		width: 90%;
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+	.diptico {
+		max-height: 500px !important;
+	}
+	.contactoBg {
+		background: #ffffff;
+	}
+
+	.masthead > div {
+		justify-content: center;
+		align-items: center;
+	}
+	.footerNameContainer{
+		display: flex;
+		justify-content: center;
+	}
+	.footerName {
+		width: 80%;
+	}
+	.footerContainer{
+		flex-direction: column-reverse!important;
+	}
+footer hr{
+		display: block;
+	}
+}
+
+@media (max-width: 500px) {
+	.headerContent {
+		width: 250px;
+	}
+	.masthead {
+		padding-top: 45vh;
+	}
 }
