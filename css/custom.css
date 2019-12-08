@@ -66,6 +66,16 @@ h6,
 	background-position: center;
 	height: 100vh;
 }
+
+.meText .btn {
+	width: 142px;
+	box-shadow: none;
+}
+
+.btns-wrapper {
+	margin-top: 70px;
+}
+
 .header img {
 	width: 100%;
 	height: auto;
@@ -129,9 +139,20 @@ h6,
 	font-size: 20px;
 }
 
+.btn-transparent:hover {
+	color: white;
+	background-color:#5793d3;
+}
+
+.video-sobre-mi {
+	width: 200px;
+	height: 400px;
+	object-fit: cover;
+}
+
 .contacto {
 	min-height: 75vh;
-	height: auto;x
+	height: auto;
 }
 .contactoBg {
 	background-repeat: no-repeat;
@@ -151,6 +172,10 @@ h6,
 .footer-contacto img {
 	width: auto;
 	height: 90px;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+    font-size: 1.2em;
 }
 
 .btn-enviar {
@@ -448,7 +473,7 @@ hr {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 70vh;
+	/* height: 70vh; */
 }
 .meContainer {
 	height: 100vh;
@@ -457,6 +482,7 @@ footer hr{
 	display: none;
 	border-top: 1px solid #000;
 }
+
 @media (max-width: 991px) {
 	.masthead {
 		padding-top: 40vh;
@@ -524,4 +550,8 @@ footer hr{
 	.masthead {
 		padding-top: 45vh;
 	}
+}
+
+#goto {
+	cursor: pointer;
 }
