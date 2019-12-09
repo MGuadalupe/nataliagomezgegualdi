@@ -349,10 +349,12 @@ hr {
 .btn-vermas {
 	background-color: #5793d3;
 	color: white;
-	margin-top: 30px;
-	margin-bottom: 35px;
+
 	padding-left: 40px;
 	padding-right: 40px;
+	position: absolute;
+	top: 135px;
+	right: 0;
 }
 
 .btn-vermas:hover {
@@ -457,7 +459,11 @@ hr {
 .textAboutMe {
 	max-width: 1100px;
 }
-
+@media (max-width: 1023px) {
+	.btn-vermas {
+		top: 190px;
+	}
+}
 @media (max-width: 1199px) and (min-width: 991px) {
 	.botonera-modelo .btn {
 		height: 56px;
@@ -528,19 +534,7 @@ footer hr {
 		justify-content: center;
 		align-items: center;
 	}
-	/* .socialMobile {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		justify-content: center;
-	}
-	.socialMobile li {
-		margin: 20px 30px !important;
-	}
-	.socialMobile li i {
-		color: #fff !important;
-		font-size: 30px;
-	} */
+
 	.footerNameContainer {
 		display: flex;
 		justify-content: center;
@@ -560,28 +554,38 @@ footer hr {
 	#mainNav .navbar-toggler {
 		z-index: 2;
 	}
-	#navResponsiveList li {
-		display: block;
-	}
+
 	#navbarResponsive {
-		align-items: flex-end;
-		background: rgba(0, 0, 0, 0.7);
-		width: 210px;
-		height: 100vh;
-		transition: all 0.3s ease;
-		position: absolute;
-		right: 0;
+		position: fixed;
+		bottom: 0;
 		top: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
 	}
 	#navbarResponsive ul {
 		margin-top: 60px;
 		text-align: center;
+		width: 210px;
 	}
 	#navDesktop {
 		display: none;
 	}
+	.slick-prev {
+		left: 0 !important;
+	}
+	.slick-next {
+		right: 0 !important;
+	}
+	.btn-vermas {
+		top: 130px;
+	}
 }
-
+@media (max-width: 599px) {
+	.btn-vermas {
+		position: initial;
+		margin-top: 30px;
+	}
+}
 @media (max-width: 500px) {
 	.headerContent {
 		width: 250px;

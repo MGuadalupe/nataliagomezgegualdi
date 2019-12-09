@@ -21,6 +21,7 @@
 
 		<link rel="stylesheet" href="js/slick-master/slick/slick.css" />
 		<link rel="stylesheet" href="js/slick-master/slick/slick-theme.css" />
+	
 	</head>
 
 	<body id="page-top" class="aboutMe">
@@ -30,7 +31,7 @@
 					<img src="img/cine.svg" alt="" />
 				</a>
 				<button
-					class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+					class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarResponsive"
@@ -38,11 +39,11 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					Menu
+				
 					<i class="fas fa-bars"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav ml-auto" id="navDesktop">
 						<li class="nav-item mx-0 mx-lg-1">
 							<a
 								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -65,12 +66,43 @@
 							></a>
 						</li>
 					</ul>
+					<ul class="navbar-nav ml-auto d-md-none" id="navResponsiveList">
+						<li class="nav-item mx-0 mx-lg-1">
+							<a
+								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+								href="index.html"
+								>Home</i
+							></a>
+						</li>
+						<li class="nav-item mx-0 mx-lg-1">
+							<a
+								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+								href="sobre-mi.html"
+								>Sobre mi</i
+							></a>
+						</li>
+						
+						<li class="nav-item mx-0 mx-lg-1">
+							<a
+								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+								href="actriz.html"
+								>Actriz</i
+							></a>
+						</li>
+						<li class="nav-item mx-0 mx-lg-1">
+							<a
+								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+								href="galeria.html"
+								>Galería</i
+							></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 
 		<header class="text-white bg-modelo">
-			<div class=" w-100 headerContainer vh-70">
+			<div class="container-fluid headerContainer vh-70">
 				<div class="container d-flex flex-column ">
 					<div class="headerContent">
 						<h1 class="d-none">Natalia Gómez Gegualdi</h1>
@@ -109,8 +141,8 @@
 			</div>
 		</section>
 
-		<section class="container section ">
-			<div class="row">
+		<section class=" section container">
+			<div class="row ">
 				<div class="col offset-2">
 					<p>
 						Participé en campañas de primeras marcas y fui la imagen de muchas
@@ -126,8 +158,9 @@
 			</div>
 		</section>
 		<section class="marcas-wrapper">
-			<div class="row">
-				<div class="wrapper offset-lg-2 col-lg-8">
+			<div class="container">
+				<div class="row">
+					<div class="wrapper offset-lg-2 col-lg-8">
 					<div class="marcas">
 						<div class="marcaimg">
 							<img src="img/marcas/marca01.jpg" style="opacity: 0.8" alt="" />
@@ -141,14 +174,14 @@
 						<div class="marcaimg">
 							<img
 								src="img/marcas/marca04.jpg"
-								style="margin-top: 30px"
+								style="margin-top: 15px"
 								alt=""
 							/>
 						</div>
 						<div class="marcaimg">
 							<img
 								src="img/marcas/marca05.jpg"
-								style="margin-top: 70px; opacity: 0.6"
+								style="margin-top: 33px; opacity: 0.6"
 								alt=""
 							/>
 						</div>
@@ -176,16 +209,13 @@
 							/>
 						</div>	
 					</div>
+					<a  href='modelo.html' class='btn btn-vermas'>¡Ver más!</a>
 				</div>
+				</div>
+				
 					
 			</div>
-			<div class="container">
-					<div class="row">
-						<div class="wrapper offset-2 col-lg-2  text-right">
-							<a  href='modelo.html' class='btn btn-vermas'>¡Ver más!</a>
-						</div>
-					</div>	
-			</div>
+			
 			
 		</section>
 		<div class="container">
@@ -198,7 +228,7 @@
 		</div>
 		<section class="container mt-4 trabajos-modelo">
 			<div class="row">
-				<div class="col offset-2 row">
+				<div class="col offset-2">
 					<div class="col-lg-4">
 						<p class="job-title">TV como modelo</p>
 						<ul class="list-unstyled">
@@ -304,24 +334,27 @@
 		</section>
 		<footer>
 			<div class="container">
-				<div class="row d-flex justify-content-between align-items-center">
+				<div class="row">
 					<div class="col">
-						<hr style="border-top: 1px solid #000;" />
+						<hr>
 					</div>
 				</div>
-				<div class="row d-flex justify-content-between align-items-center">
-					<div class="col-lg-6 mb-5">
+				<div class="row d-flex justify-content-between align-items-center footerContainer">
+					
+					<div class="col-lg-6 my-5 footerNameContainer">
 						<img src="img/footerName.svg" alt="" class="footerName" />
 					</div>
 
 					<div
-						class="col-lg-3 d-flex justify-content-around align-items-center social"
+						class="col-lg-3 d-flex justify-content-around align-items-center social mt-3"
 					>
 						<a>Facebook</a>
 						<a>Instagram</a>
 						<a>Youtube</a>
 					</div>
+					
 				</div>
+				
 			</div>
 		</footer>
 
@@ -380,7 +413,7 @@
 						{
 						breakpoint: 1024,
 						settings: {
-							slidesToShow: 3,
+							slidesToShow: 4,
 							slidesToScroll: 3,
 							infinite: true,
 							dots: true
@@ -389,7 +422,7 @@
 						{
 						breakpoint: 600,
 						settings: {
-							slidesToShow: 2,
+							slidesToShow: 4,
 							slidesToScroll: 2
 						}
 						},
@@ -409,3 +442,4 @@
 		</script>
 	</body>
 </html>
+
