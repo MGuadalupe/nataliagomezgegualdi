@@ -137,6 +137,7 @@ h6,
 	padding: 10px 70px;
 	color: black;
 	font-size: 20px;
+	width:212px;
 }
 
 .btn-transparent:hover {
@@ -220,6 +221,7 @@ h6,
 .slideBg4,
 .slideBg5,
 .slideBg6 {
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -249,6 +251,8 @@ h6,
 	width: 100%;
 	padding: 20px 0;
 	background: rgba(255, 255, 255, 1);
+	font-size: 18px;
+	color: #606060;
 }
 
 /* SOBRE MI */
@@ -598,3 +602,14 @@ footer hr {
 #goto {
 	cursor: pointer;
 }
+
+button.slick-prev:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f36b";
+}  
+button.slick-next:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f1ea";       
+}   
