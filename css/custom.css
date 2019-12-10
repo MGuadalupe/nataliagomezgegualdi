@@ -559,6 +559,9 @@ ul#photo-gallery {
 }
 
 @media (max-width: 991px) {
+	.section-actriz{
+		margin-top:0px
+	}
 	.masthead {
 		padding-top: 45vh;
 	}
@@ -583,6 +586,7 @@ ul#photo-gallery {
 }
 
 @media (max-width: 768px) {
+	
 	.meContainer {
 		min-height: 75vh;
 		height: auto;
