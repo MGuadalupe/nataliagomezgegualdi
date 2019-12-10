@@ -196,44 +196,48 @@
 				</div>
 			</div>
 		</section>
-		<section class="container-fluid py-100">
-			<div class="row">
-				<div class="col offset-2">
-						<h3 class="text-center pt-3 pb-5">Podés ver más de mí en:</h3>
-						<div class="d-flex justify-content-center align-items-center">
-							<div
-								class="social-iconos d-flex justify-content-around align-items-center"
-								style="width:400px;"
-							>
-							<a href=""><i class="fab fa-facebook-f fa-3x text-grey"></i></a> 
-							<a href=""><i class="fab fa-instagram fa-3x text-grey"></i></a>
-							<a href=""><i class="fab fa-youtube fa-3x text-grey"></i></a>
-							</div>
+		<section class="container">
+			
+			<div class="row pt-4 pb-5">
+				<div class="col offset-lg-2">
+					<h3 class="text-center pt-3 pb-5">Podés ver más de mí en:</h3>
+					<div class="d-flex justify-content-center align-items-center">
+						<div
+							class="social-iconos d-flex justify-content-around align-items-center"
+							style="width:400px;"
+						>
+						<a href=""><i class="fab fa-facebook-f fa-3x text-grey"></i></a> 
+						<a href=""><i class="fab fa-instagram fa-3x text-grey"></i></a>
+						<a href=""><i class="fab fa-youtube fa-3x text-grey"></i></a>
 						</div>
 					</div>
-				<div class="col-2"></div>
+				</div>
+				<div class="col-lg-2"></div>
 			</div>
 		</section>
-
 		<footer>
 			<div class="container">
-				<div class="row d-flex justify-content-between align-items-center">
+				<div class="row">
 					<div class="col">
-						<hr style="border-top: 1px solid #000;" />
+						<hr>
 					</div>
 				</div>
-				<div class="row d-flex justify-content-between align-items-center ">
-					<div class="col-lg-6 mb-5">
+				<div class="row d-flex justify-content-between align-items-center footerContainer">
+					
+					<div class="col-md-6 mb-5 footerNameContainer">
 						<img src="img/footerName.svg" alt="" class="footerName" />
 					</div>
+
 					<div
-						class="col-lg-3 d-flex justify-content-around align-items-center social"
+						class="col-md-4 d-flex  align-items-center social mt-3 mb-5"
 					>
 						<a>Facebook</a>
 						<a>Instagram</a>
 						<a>Youtube</a>
 					</div>
+					
 				</div>
+				
 			</div>
 		</footer>
 
@@ -255,53 +259,7 @@
 	</body>
 </html>
 
-<style>
-	#photos img {
-		width: 30%;
-		float: left;
-		display: block;
-		margin: 2px;
-	}
 
-	ul#photo-gallery {
-		list-style: none;
-		margin: 0px auto;
-		padding: 10px;
-		display: block;
-		max-width: 780px;
-		text-align: center;
-	}
-
-	#overlay {
-		background: rgba(0, 0, 0, 0.8);
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		display: none;
-		text-align: center;
-	}
-
-	#overlay img {
-		margin: 10% auto 0;
-		width: 550px;
-		border-radius: 5px;
-	}
-
-	#photos {
-		width: 100%;
-	}
-
-	#photo-gallery {
-		width: 100%;
-	}
-	.closeGallery {
-		position: absolute;
-		right: 20px;
-		top: 30px;
-	}
-</style>
 <script>
 	var $overlay = $(
 		'<div id="overlay"><i class="fas fa-times fa-2x text-white closeGallery"></i></div>'

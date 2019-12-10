@@ -147,8 +147,16 @@ h6,
 
 .video-sobre-mi {
 	width: 200px;
-	height: 400px;
+	height: 450px;
 	object-fit: cover;
+}
+.polaroidContainer {
+	width: 80%;
+	transform: rotate(-10deg);
+	box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+	border: 4px;
+	border-color: #ffffff;
+	padding: 20px 20px 60px 20px;
 }
 
 .contacto {
@@ -280,6 +288,16 @@ h6,
 	background-repeat: no-repeat;
 	background-position: 0px -250px;
 	height: calc(100vh - 200px);
+}
+@media (max-width: 1200px) {
+	.me .container {
+		max-width: 90%;
+	}
+	.polaroidContainer {
+	}
+	.video-sobre-mi {
+		height: 350px;
+	}
 }
 @media (max-width: 1090px) {
 	.bg-sobre-mi {
@@ -454,6 +472,7 @@ hr {
 }
 .social {
 	margin-top: -30px;
+	justify-content: space-between;
 }
 
 .social-iconos a:hover i {
@@ -493,6 +512,51 @@ footer hr {
 .socialMobile {
 	display: none;
 }
+#photos img {
+	width: 28%;
+	float: left;
+	display: block;
+	margin: 2px;
+}
+
+ul#photo-gallery {
+	list-style: none;
+	margin: 0px auto;
+	padding: 10px;
+	display: block;
+	max-width: 780px;
+	text-align: center;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+
+#overlay img {
+	margin: 10% auto 0;
+	width: 550px;
+	border-radius: 5px;
+}
+
+#photos {
+	width: 100%;
+}
+
+#photo-gallery {
+	width: 100%;
+}
+.closeGallery {
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
 
 @media (max-width: 991px) {
 	.masthead {
@@ -509,6 +573,12 @@ footer hr {
 	}
 	.bg-cover {
 		background-image: url('../img/img-principal-mobile.jpg');
+	}
+	.video-sobre-mi {
+		height: 250px;
+	}
+	.social {
+		justify-content: space-around;
 	}
 }
 
@@ -557,6 +627,10 @@ footer hr {
 	}
 	#mainNav .navbar-toggler {
 		z-index: 2;
+	}
+	#socialResponsive a {
+		font-size: 30px;
+		color: white;
 	}
 
 	#navbarResponsive {
