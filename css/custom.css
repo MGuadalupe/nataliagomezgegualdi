@@ -199,7 +199,7 @@ h6,
 	font-family:sans-serif;
 	color:#fff;
   } */
-.carousel {
+.carousel, .galeria {
 	width: 90%;
 	margin: 0px auto;
 }
@@ -603,13 +603,34 @@ footer hr {
 	cursor: pointer;
 }
 
+.slick-list {
+	margin-left:15px!important;
+	margin-right:15px!important;
+}
+
 button.slick-prev:before {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
+	-webkit-text-stroke: 3px white;
+	font-size: 30px;
 	content: '\f053';
+	margin-right: 60px;
+	color:#212529!important;
+	opacity:1!important;
 }
 button.slick-next:before {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
+	-webkit-text-stroke: 3px white;
+	font-size: 30px;
 	content: '\f054';
+	color:#212529!important;
+	opacity:1!important;
+}
+
+.galeria button.slick-next:before {
+	-webkit-text-stroke: 3px rgb(232, 232, 232);
+}
+.galeria button.slick-prev:before {
+	-webkit-text-stroke: 3px rgb(232, 232, 232);
 }
