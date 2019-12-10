@@ -65,6 +65,7 @@ h6,
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
+	min-height: 700px;
 }
 
 .meText .btn {
@@ -116,14 +117,20 @@ h6,
 		rgba(0, 0, 0, 0) 100%
 	);
 	z-index: 0;
+	min-height: 700px;
 }
 .section {
 	margin-top: 80px;
+}
+.bg-sobre-mi,
+.headerContainer {
+	min-height: 560px !important;
 }
 .headerContainer {
 	padding-top: calc(3rem + 74px) !important;
 }
 .diptico {
+	min-height: 700px;
 	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -143,6 +150,16 @@ h6,
 .btn-transparent:hover {
 	color: white;
 	background-color: #5793d3;
+}
+.me {
+	padding-top: 70px;
+}
+.me,
+.galleryIndex {
+	min-height: 700px;
+}
+.bg-modelo {
+	min-height: 400px;
 }
 
 .video-sobre-mi {
@@ -207,7 +224,8 @@ h6,
 	font-family:sans-serif;
 	color:#fff;
   } */
-.carousel, .galeria {
+.carousel,
+.galeria {
 	width: 90%;
 	margin: 0px auto;
 }
@@ -301,7 +319,12 @@ h6,
 }
 @media (max-width: 1090px) {
 	.bg-sobre-mi {
-		background-position: top left;
+		background-position: 0px -120px;
+	}
+	.headerContent img {
+		width: 370px;
+		margin-top: 50px;
+		margin-left: -20px;
 	}
 }
 
@@ -367,11 +390,15 @@ hr {
 }
 
 /* FOOTER COMPARTIDO */
-
 .btn-vermas {
 	background-color: #5793d3;
 	color: white;
-
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+.btn-vermasMarcas {
+	background-color: #5793d3;
+	color: white;
 	padding-left: 40px;
 	padding-right: 40px;
 	position: absolute;
@@ -379,7 +406,8 @@ hr {
 	right: 0;
 }
 
-.btn-vermas:hover {
+.btn-vermas:hover,
+.btn-vermasMarcas:hover {
 	color: white;
 }
 
@@ -457,7 +485,7 @@ hr {
 	min-height: 100%;
 }
 .headerContainer button {
-	margin-top: 120px;
+	margin-top: 60px;
 	font-size: 2em;
 	padding: 10px 40px;
 }
@@ -483,7 +511,7 @@ hr {
 	max-width: 1100px;
 }
 @media (max-width: 1023px) {
-	.btn-vermas {
+	.btn-vermasMarcas {
 		top: 190px;
 	}
 }
@@ -580,6 +608,9 @@ ul#photo-gallery {
 	.social {
 		justify-content: space-around;
 	}
+	.meText {
+		text-align: center;
+	}
 }
 
 @media (max-width: 768px) {
@@ -654,14 +685,26 @@ ul#photo-gallery {
 	.slick-next {
 		right: 0 !important;
 	}
-	.btn-vermas {
+	.btn-vermasMarcas {
 		top: 130px;
 	}
 }
 @media (max-width: 599px) {
-	.btn-vermas {
+	.headerContent img {
+		margin-top: 0;
+	}
+	.btn-vermasMarcas {
 		position: initial;
 		margin-top: 30px;
+	}
+	.bg-sobre-mi,
+	.bg-sobre-mi .headerContainer,
+	.bg-sobre-mi .masthead {
+		max-height: 420px !important;
+		min-height: 420px !important;
+	}
+	.headerContainer button {
+		margin-top: 120px;
 	}
 }
 @media (max-width: 500px) {
@@ -671,15 +714,33 @@ ul#photo-gallery {
 	.masthead {
 		padding-top: 45vh;
 	}
+	.headerContainer button {
+		margin-top: 180px;
+		font-size: 1.3em;
+	}
+	.bg-sobre-mi {
+		background-position: 0px -80px;
+	}
+	.bg-sobre-mi,
+	.bg-sobre-mi .headerContainer,
+	.bg-sobre-mi .masthead {
+		max-height: 320px !important;
+		min-height: 320px !important;
+	}
 }
 
+@media (max-width: 400px) {
+	.headerContainer {
+		padding-top: calc(-0.8rem + 74px) !important;
+	}
+}
 #goto {
 	cursor: pointer;
 }
 
 .slick-list {
-	margin-left:15px!important;
-	margin-right:15px!important;
+	margin-left: 15px !important;
+	margin-right: 15px !important;
 }
 
 button.slick-prev:before {
@@ -689,8 +750,8 @@ button.slick-prev:before {
 	font-size: 30px;
 	content: '\f053';
 	margin-right: 60px;
-	color:#212529!important;
-	opacity:1!important;
+	color: #212529 !important;
+	opacity: 1 !important;
 }
 button.slick-next:before {
 	font-family: 'Font Awesome 5 Free';
@@ -698,8 +759,8 @@ button.slick-next:before {
 	-webkit-text-stroke: 3px white;
 	font-size: 30px;
 	content: '\f054';
-	color:#212529!important;
-	opacity:1!important;
+	color: #212529 !important;
+	opacity: 1 !important;
 }
 
 .galeria button.slick-next:before {
