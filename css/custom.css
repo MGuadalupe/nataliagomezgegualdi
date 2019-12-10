@@ -558,6 +558,10 @@ footer hr {
 	#mainNav .navbar-toggler {
 		z-index: 2;
 	}
+	#socialResponsive a {
+		font-size: 30px;
+		color: white;
+	}
 
 	#navbarResponsive {
 		position: fixed;
