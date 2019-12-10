@@ -559,6 +559,10 @@ ul#photo-gallery {
 }
 
 @media (max-width: 991px) {
+	.slick-list {
+		margin-left: 35px!important;
+		margin-right: 35px!important;
+	}
 	.section-actriz{
 		margin-top:0px
 	}
@@ -685,7 +689,12 @@ ul#photo-gallery {
 	margin-left:15px!important;
 	margin-right:15px!important;
 }
-
+@media (max-width: 991px) {
+	.slick-list {
+		margin-left: 35px!important;
+		margin-right: 35px!important;
+	}
+}
 button.slick-prev:before {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
