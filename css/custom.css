@@ -42,6 +42,10 @@ h6,
 	color: #5793d3;
 }
 
+#socialResponsive a.nav-link:hover i {
+	color:#5793d3;
+}
+
 .headerContent {
 	width: 450px;
 }
