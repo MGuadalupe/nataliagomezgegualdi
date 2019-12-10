@@ -43,7 +43,7 @@ h6,
 }
 
 #socialResponsive a.nav-link:hover i {
-	color:#5793d3;
+	color: #5793d3;
 }
 
 .headerContent {
@@ -541,7 +541,7 @@ hr {
 }
 @media (max-width: 1023px) {
 	.btn-vermasMarcas {
-		top: 190px;
+		top: 160px;
 	}
 }
 @media (max-width: 1199px) and (min-width: 991px) {
