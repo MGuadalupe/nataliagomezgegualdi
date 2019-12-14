@@ -229,33 +229,34 @@
           <form name="sentMessage" id="contactForm" action="contact_me.php" method="post">
             <h2 class='mt-4'>¡Contactame!</h2>
               <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <div class="form-group floating-label-form-group controls mb-0 pb-0">
                   <label for="name">Nombre</label>
-                  <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresá tu nombre">
-                  <p class="help-block text-danger"></p>
-                </div>
+                  <input class="form-control py-0" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresá tu nombre">
+                  
+				</div>
+				<small class="help-block text-danger"></small>
               </div>
               <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <div class="form-group floating-label-form-group controls mb-0 mt-2 pb-0">
                   <label for="surname">Apellido</label>
-                  <input class="form-control" id="surname" type="text" placeholder="Apellido" required="required" data-validation-required-message="Por favor ingresá tu apellido">
-                  <p class="help-block text-danger"></p>
-                </div>
-							</div>
-							<div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control py-0" id="surname" type="text" placeholder="Apellido" required="required" data-validation-required-message="Por favor ingresá tu apellido">
+				</div>
+				<small class="help-block text-danger"></small>
+				</div>
+			<div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 mt-2 pb-0">
                   <label for="email">Email</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor ingresá tu apellido">
-                  <p class="help-block text-danger"></p>
-                </div>
+                  <input class="form-control py-0" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor ingresá tu apellido">
+				</div>
+				<small class="help-block text-danger"></small>
               </div>
               
               <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <div class="form-group floating-label-form-group controls mb-0 mt-2 pb-0">
                   <label for="message">Mensaje</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingresá un mensaje"></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
+                  <textarea class="form-control py-0" id="message" rows="4" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingresá un mensaje"></textarea>
+				</div>
+				<small class="help-block text-danger"></small>
               </div>
               <br>
               <div id="success"></div>
