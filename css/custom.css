@@ -277,16 +277,16 @@ h6,
 .slideBg1,
 .slideBg4 {
 	background-position: top;
-	background-image: url('../img/lookbooks/img.jpg');
+	background-image: url('../img/lookbooks/gallery-index-1.jpg');
 }
 .slideBg2,
 .slideBg5 {
-	background-image: url('../img/catalogo/IMG_0177_R1_baja.jpg');
+	background-image: url('../img/catalogo/gallery-index-2.jpg');
 }
 .slideBg3,
 .slideBg6 {
 	background-position: center;
-	background-image: url('../img/editoriales/4E508631-5F6B-44E2-BEE0-846C612FFCB9.jpg');
+	background-image: url('../img/editoriales/gallerry-index-3.jpg');
 }
 
 .sliderText {
