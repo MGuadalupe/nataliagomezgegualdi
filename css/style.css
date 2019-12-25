@@ -5174,9 +5174,9 @@ a.badge-dark:focus, a.badge-dark.focus {
     margin: 0  30px !important;;
   }
   
-  .navbar-expand-lg .navbar-toggler {
+  /* .navbar-expand-lg .navbar-toggler {
     display: none;
-  }
+  } */
   .list-group-horizontal-md {
     flex-direction: row;
   }
