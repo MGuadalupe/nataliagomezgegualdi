@@ -23,26 +23,68 @@
 	</head>
 
 	<body id="page-top">
-		<nav class="navbar navbar-expand-lg  text-uppercase fixed-top" id="mainNav">
-			<div class="container">
-				<a class="cine js-scroll-trigger" href="#page-top">
-					<img src="img/cine.svg" alt="" />
-				</a>
-				<button
-					class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarResponsive"
-					aria-controls="navbarResponsive"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-				
-					<i class="fas fa-bars"></i>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto" id="navDesktop">
-						<li class="nav-item mx-0 mx-lg-1">
+		<div class="hambuerguerContainer">
+			<div class="full-menu">
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a
+									class="nav-link"
+									href="sobre-mi.html"
+									>Sobre mi</i
+								></a></li>
+						<li class="about"><a
+									class="nav-link"
+									href="modelo.html"
+									>Modelo</i
+								></a></li>
+						<li class="works"><a
+									class="nav-link"
+									href="actriz.html"
+									>Actriz</i
+								></a></li>
+						<li class="gallery"><a
+									class="nav-link"
+									href="galeria.html"
+									>Galería</i
+								></a></li>
+								<li class="contact"><a
+									class="nav-link" id="contactLink"
+									href="#contact"
+									>Contacto</i
+								></a></li>
+						<div class="d-flex justify-content-between" style="margin-top:30px;">
+							<li class="nav-item mx-0 mx-lg-1" style="font-size: 25px;">
+								<a
+									class="nav-link d-lg-none"
+									href=""
+									><i class="fab fa-facebook-f"></i
+								></a>
+							</li>
+							<li class="nav-item mx-0 mx-lg-1" style="font-size: 25px;">
+								<a
+									class="nav-link d-lg-none"
+									href=""
+									><i class="fab fa-instagram"></i
+								></a>
+							</li>
+							<li class="nav-item mx-0 mx-lg-1" style="font-size: 25px;">
+								<a
+									class="nav-link d-lg-none"
+									href=""
+									><i class="fab fa-youtube"></i
+								></a>
+							</li>
+						</div>
+					</ul>
+				</nav>
+			</div>
+			<nav class="navbar navbar-expand-lg text-uppercase pt-0">
+				<div class="container-fluid pt-3">
+					<a class="cine" href="#page-top">
+						<img src="img/cine.svg" alt="" />
+					</a>
+					<ul class="cine navbar-nav ml-auto d-lg-flex flex-row justify-content-between d-none " id="socialResponsive">
+						<li class="nav-item mx-0 mx-lg-1 ">
 							<a
 								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
 								href=""
@@ -63,57 +105,34 @@
 								><i class="fab fa-youtube"></i
 							></a>
 						</li>
+						<li class="nav-item mx-0 mx-lg-1">
+
+						</li>
 					</ul>
-					<ul class="navbar-nav ml-auto d-md-none" id="navResponsiveList">
-						<li class="nav-item mx-0 mx-lg-1">
-							<a
-								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-								href="index.html"
-								>Home</i
-							></a>
-						</li>
-						<li class="nav-item mx-0 mx-lg-1">
-							<a
-								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-								href="sobre-mi.html"
-								>Sobre mi</i
-							></a>
-						</li>
-						<li class="nav-item mx-0 mx-lg-1">
-							<a
-								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-								href="modelo.html"
-								>Modelo</i
-							></a>
-						</li>
-						<li class="nav-item mx-0 mx-lg-1">
-							<a
-								class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-								href="actriz.html"
-								>Actriz</i
-							></a>
-						</li>
-						
-					</ul>
+					<div class="hamburguer">
+						<div class="lines line-top"></div>
+						<div class="lines line-mid"></div>
+						<div class="lines line-bottom"></div>
+					</div>	
 				</div>
-			</div>
-		</nav>
-		<div class="container-fluid ">
-			<header class="row text-white bg-galeria">
-				<div class=" w-100 masthead headerContainer">
-					<div class="container d-flex flex-column ">
-						<div class="headerContent">
-							<h1 class="d-none">Natalia Gómez Gegualdi</h1>
-							<img
-								src="img/title.svg"
-								alt="Natalia Gómez Gegualdi"
-								title="Natalia Gómez Gegualdi"
-							/>
-							<h3 class="section-title text-center">Galería</h3>
+			</nav>
+			<div class="container-fluid ">
+				<header class="row text-white bg-galeria">
+					<div class=" w-100 masthead">
+						<div class="container d-flex flex-column ">
+							<div class="headerContent">
+								<h1 class="d-none">Natalia Gómez Gegualdi</h1>
+								<img
+									src="img/title.svg"
+									alt="Natalia Gómez Gegualdi"
+									title="Natalia Gómez Gegualdi"
+								/>
+								<h3 class="section-title text-center">Galería</h3>
+							</div>
 						</div>
 					</div>
-				</div>
-			</header>
+				</header>
+			</div>
 		</div>
 
 		<section class="container galleryContainer">
@@ -350,3 +369,9 @@
 		})
 	})
 </script>
+<script src="js/hamburguer.js"></script>
+<style>
+	.navbar{
+		z-index: 1;
+	}
+</style>
