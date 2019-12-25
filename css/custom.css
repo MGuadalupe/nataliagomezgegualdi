@@ -294,7 +294,7 @@ body,
 	min-height: 700px;
 }
 .bg-modelo {
-	min-height: 400px;
+	min-height: 500px;
 	margin-top: -94px;
 }
 
@@ -509,6 +509,7 @@ hr {
 }
 
 .botonera-modelo {
+	
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
@@ -811,6 +812,12 @@ ul#photo-gallery {
 /* MOBILE COMUN */
 
 @media (max-width: 768px) {
+	/* .botonera-modelo {
+		min-height:400px;
+	} */
+	.btns-wrapper{
+		padding-bottom:50px;
+	}
 	/* .slick-slider {
 		margin-left: 0px;
 		margin-right: 0px;
@@ -828,6 +835,13 @@ ul#photo-gallery {
 	}
 	.headerContainer {
 		padding-top: calc(4rem + 74px) !important;
+	}
+	.bg-modelo .headerContainer {
+		padding-top: calc(8rem + 74px) !important;
+	}
+	.bg-modelo .section-title {
+		font-size: 30px;
+		margin-top: 20px;
 	}
 	.bg-actress .headerContainer {
 		padding-top: calc(6rem + 74px) !important;
@@ -860,14 +874,14 @@ ul#photo-gallery {
 		min-height: auto;
 	}
 	.btn-transparent {
-		margin-top: 50%;
-		background-color: rgba(255, 255, 255, 0.4);
+		margin-top: 25%;
+		/* background-color: rgba(255, 255, 255, 0.4);
 		border: 1px solid rgba(255, 255, 255, 0.1);
 		border-color: black;
 		padding: 7px 40px;
 		color: black;
-		font-size: 18px;
-		width: 180px;
+		font-size: 18px; */
+		width: 233px;
 	}
 	.social {
 		padding-bottom: 0px;
@@ -888,7 +902,9 @@ ul#photo-gallery {
 		margin-bottom: 20px;
 	}
 	.diptico {
-		max-height: 500px !important;
+		max-height: 500px!important;
+		min-height:0px;
+		height: 30vh;
 	}
 	.contactoBg {
 		background: #ffffff;
