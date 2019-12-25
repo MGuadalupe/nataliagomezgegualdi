@@ -114,7 +114,7 @@
 
 		<section class="container section textAboutMe">
 			<div class="row">
-				<div class="col offset-2">
+				<div class="col offset-sm-2">
 					<div class="d-flex mb-4">
 						<div class="barTitle"></div>
 						<h4 class='txt-sobre-mi'>Sobre mí</h4>
@@ -154,14 +154,15 @@
 						>
 					</p>
 				</div>
-				<div class="col-2"></div>
+				<div class="col-2 d-none d-sm-block"></div>
 			</div>
 
 			<div class="row mt-5 verticalText">
-				<div class="col-2 mb-0 pb-0">
-					<h3>Modelo</h3>
+				<div class="col-2 mb-0 pb-0 d-none d-sm-block">
+					<h3 class="">Modelo</h3>
 				</div>
 				<div class="col">
+					<h4 class="mb-4 d-block d-sm-none">Modelo</h4>
 					<p class="highlightText">
 						Participé en campañas de primeras marcas y fui la imagen de muchas
 						de ellas como cara visible del nuevo paradigma de mujer real.
@@ -178,8 +179,11 @@
 			</div>
 			<div class="row verticalText"
 		">
-				<div class="col-2"><h3>Actriz</h3></div>
+				<div class="col-2 d-none d-sm-block">
+					<h3>Actriz</h3>
+				</div>
 				<div class="col">
+					<h4 class="mb-4 d-block d-sm-none">Actriz</h4>
 					<p class="highlightText">
 						Desde muy chica me formé en ballet y danzas clásicas.
 					</p>
@@ -190,12 +194,19 @@
 						 Participé en obras de teatro, comerciales, cortometrajes, tiras de TV abierta y cable.
 					</p>
 					<a href='actriz.html' class='btn btn-vermas'>¡Ver más!</a>
-					<hr style="border-top: 1px solid #000;" class="d-none d-md-none d-lg-block"/>
+
+					<!-- <hr style="border-top: 1px solid #000;" class="d-none d-md-none d-lg-block"/> -->
+
 				</div>
 				<div class="col-lg-2"></div>
 			</div>
 		</section>
 		<section class="container">
+			<div class="row">
+				<div class="col">
+					<hr style="border-top: 1px solid #000;">
+				</div>
+			</div>
 			<div class="row pt-4 pb-5">
 				<div class="col offset-lg-2">
 					<h3 class="text-center pt-3 pb-5">Podés ver más de mí en:</h3>
@@ -227,7 +238,7 @@
 					</div>
 
 					<div
-						class="col-md-4 d-flex  align-items-center social mt-3 mb-5"
+						class="col-md-4 d-flex  align-items-center social mt-3 mb-2"
 					>
 						<a>Facebook</a>
 						<a>Instagram</a>
