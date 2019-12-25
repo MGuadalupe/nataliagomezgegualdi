@@ -654,7 +654,69 @@ ul#photo-gallery {
 	}
 }
 
+.social {
+	padding-bottom: 40px;
+}
+
+/* MOBILE COMUN */
+
 @media (max-width: 768px) {
+	/* .slick-slider {
+		margin-left: 0px;
+		margin-right: 0px;
+	} */
+	.section-actriz  b {
+		font-weight: 300!important;
+		text-decoration: underline!important;
+	}
+	.section-title {
+		font-size: 30px;
+		margin-top: 50px;
+	}
+	.headerContainer {
+		padding-top: calc(4rem + 74px) !important;
+	}
+	.bg-actress .headerContainer {
+		padding-top: calc(6rem + 74px) !important;
+	}
+	.trabajos-modelo ul {
+		margin-left: 30px;
+	}
+	.slick-prev, .slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		display: block;
+		width: 15px;
+		height: 15px;
+		padding: 0;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+
+	.me, .galleryIndex {
+		min-height: auto;
+	}
+	.btn-transparent {
+		margin-top: 50%;
+		background-color: rgba(255, 255, 255, 0.4);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-color: black;
+		padding: 7px 40px;
+		color: black;
+		font-size: 18px;
+		width: 180px;
+	}
+	.social {
+		padding-bottom: 0px;
+	}
 	.meContainer {
 		min-height: 75vh;
 		height: auto;
@@ -779,9 +841,9 @@ ul#photo-gallery {
 }
 
 @media (max-width: 400px) {
-	.headerContainer {
+	/* .headerContainer {
 		padding-top: calc(-0.8rem + 74px) !important;
-	}
+	} */
 }
 #goto {
 	cursor: pointer;
