@@ -812,6 +812,9 @@ ul#photo-gallery {
 /* MOBILE COMUN */
 
 @media (max-width: 768px) {
+	ul#photo-gallery {
+		padding-left: 0px;
+	}
 	.botonera-modelo {
 		padding-top: 65px;
 	}
