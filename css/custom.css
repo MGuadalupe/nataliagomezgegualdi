@@ -1012,7 +1012,7 @@ ul#photo-gallery {
 	} */
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
 	.botonera-modelo {
 		padding-top: 125px;
 	}
