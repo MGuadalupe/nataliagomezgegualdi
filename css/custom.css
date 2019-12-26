@@ -812,9 +812,9 @@ ul#photo-gallery {
 /* MOBILE COMUN */
 
 @media (max-width: 768px) {
-	/* .botonera-modelo {
-		min-height:400px;
-	} */
+	.botonera-modelo {
+		padding-top: 65px;
+	}
 	.btns-wrapper{
 		padding-bottom:50px;
 	}
@@ -996,10 +996,12 @@ ul#photo-gallery {
 		margin-top: -80px;
 	}
 	.textAboutMe {
-		margin-top: -220px;
+		margin-top: -180px;
 	}
+	
 }
 @media (max-width: 500px) {
+	
 	.headerContent {
 		width: 250px;
 	}
@@ -1026,6 +1028,13 @@ ul#photo-gallery {
 		padding-top: calc(-0.8rem + 74px) !important;
 	} */
 }
+
+@media (max-width: 350px) {
+	.botonera-modelo {
+		padding-top: 125px;
+	}
+}
+
 #goto {
 	cursor: pointer;
 }
