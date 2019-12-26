@@ -849,25 +849,8 @@ ul#photo-gallery {
 	.trabajos-modelo ul {
 		margin-left: 30px;
 	}
-	.slick-prev,
-	.slick-next {
-		font-size: 0;
-		line-height: 0;
-		position: absolute;
-		top: 50%;
-		display: block;
-		width: 15px;
-		height: 15px;
-		padding: 0;
-		-webkit-transform: translate(0, -50%);
-		-ms-transform: translate(0, -50%);
-		transform: translate(0, -50%);
-		cursor: pointer;
-		color: transparent;
-		border: none;
-		outline: none;
-		background: transparent;
-	}
+
+
 
 	.me,
 	.galleryIndex {
@@ -1080,4 +1063,25 @@ button.slick-next:before {
 	width: 100%;
 	height: 415px;
 	background-size: cover;
+}
+
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 15px!important;
+	height: 25px!important;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
 }
