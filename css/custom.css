@@ -1088,3 +1088,9 @@ button.slick-next:before {
 	outline: none;
 	background: transparent;
 }
+
+#overlay img {
+    margin-top: 20px;
+	height: 95vh;
+	width: auto!important;
+}
