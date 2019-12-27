@@ -822,6 +822,9 @@ ul#photo-gallery {
 /* MOBILE COMUN */
 
 @media (max-width: 768px) {
+	.bg-cover, .masthead {
+		min-height: 100vh;
+	}
 	.bg-galeria{
 		height: 85vh;
 	}
