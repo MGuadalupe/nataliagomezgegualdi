@@ -406,19 +406,29 @@ body,
 	justify-content: flex-end;
 	border: 1px #ccc solid;
 }
-.slideBg1,
-.slideBg4 {
+.slideBg1
+ {
 	background-position: top;
-	background-image: url('../img/lookbooks/gallery-index-1.jpg');
+	background-image: url('../img/lookbooks/lookbooks15.jpg');
 }
-.slideBg2,
-.slideBg5 {
-	background-image: url('../img/catalogo/gallery-index-2.jpg');
+.slideBg2
+ {
+	background-image: url('../img/catalogo/catalogo6.jpg');
 }
-.slideBg3,
-.slideBg6 {
+.slideBg3
+{
 	background-position: center;
-	background-image: url('../img/editoriales/gallery-index-3.jpg');
+	background-image: url('../img/editoriales/editoriales7.jpg');
+}
+.slideBg4
+{
+	background-position: center;
+	background-image: url('../img/editoriales/editoriales10.jpg');
+}
+.slideBg5
+{
+	background-position: center;
+	background-image: url('../img/venta-online/venta-online2.jpg');
 }
 
 .sliderText {
@@ -812,6 +822,12 @@ ul#photo-gallery {
 /* MOBILE COMUN */
 
 @media (max-width: 768px) {
+	.bg-galeria{
+		height: 85vh;
+	}
+	.bg-galeria .masthead {
+		height: 85vh;
+	}
 	ul#photo-gallery {
 		padding-left: 0px;
 	}
