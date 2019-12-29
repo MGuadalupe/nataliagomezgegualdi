@@ -1114,6 +1114,6 @@ button.slick-next:before {
 	width: auto!important;
 }
 
-.btn-text b{display:inline}
-.btn-text:not(.collapsed)  span{display:none}
-.btn-text.collapsed b {display:none}
+.btn-text span.menos{display:block}
+.btn-text:not(.collapsed) span.mas {display:none}
+.btn-text.collapsed span.menos {display:none}
