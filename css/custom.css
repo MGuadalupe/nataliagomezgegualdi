@@ -470,8 +470,7 @@ body,
 	.me .container {
 		max-width: 90%;
 	}
-	.polaroidContainer {
-	}
+
 	.video-sobre-mi {
 		height: 350px;
 	}
@@ -976,7 +975,6 @@ ul#photo-gallery2 li {
 	.headerContent img {
 		margin-top: 0;
 	}
-
 	.bg-galeria .headerContent img {
 		margin-top: 80px;
 	}
