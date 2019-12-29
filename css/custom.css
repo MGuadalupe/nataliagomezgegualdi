@@ -20,6 +20,7 @@ body,
 	overflow-x: hidden;
 	overflow-y: scroll;
 	position: relative;
+	min-height: 500px;
 }
 body {
 	font-family: 'scala sans';
@@ -406,27 +407,22 @@ body,
 	justify-content: flex-end;
 	border: 1px #ccc solid;
 }
-.slideBg1
- {
+.slideBg1 {
 	background-position: top;
 	background-image: url('../img/lookbooks/lookbooks15.jpg');
 }
-.slideBg2
- {
+.slideBg2 {
 	background-image: url('../img/catalogo/catalogo6.jpg');
 }
-.slideBg3
-{
+.slideBg3 {
 	background-position: center;
 	background-image: url('../img/editoriales/editoriales7.jpg');
 }
-.slideBg4
-{
+.slideBg4 {
 	background-position: center;
 	background-image: url('../img/editoriales/editoriales10.jpg');
 }
-.slideBg5
-{
+.slideBg5 {
 	background-position: center;
 	background-image: url('../img/venta-online/venta-online2.jpg');
 }
@@ -466,6 +462,9 @@ body,
 	background-position: 0px -250px;
 	height: calc(100vh - 200px);
 	margin-top: -94px;
+}
+.section-actriz {
+	margin-top: -80px;
 }
 @media (max-width: 1200px) {
 	.me .container {
@@ -518,8 +517,6 @@ hr {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-
-
 
 .botonera-modelo .btn {
 	margin-top: 10px;
@@ -704,12 +701,13 @@ hr {
 	background-repeat: no-repeat;
 	background-position: top right;
 	margin-top: -94px;
-
+	min-height: 500px;
 	height: 70vh;
 }
 .bg-galeria .masthead {
+	min-height: 500px;
 	height: 70vh;
-	min-height: 0;
+
 	padding-top: calc(2rem + 104px);
 }
 .meContainer {
@@ -722,14 +720,16 @@ footer hr {
 .socialMobile {
 	display: none;
 }
-#photos img, #photos2 img {
+#photos img,
+#photos2 img {
 	width: 28%;
 	float: left;
 	display: block;
 	margin: 2px;
 }
 
-ul#photo-gallery, ul#photo-gallery2 {
+ul#photo-gallery,
+ul#photo-gallery2 {
 	list-style: none;
 	margin: 0px auto;
 	/* padding: 10px; */
@@ -737,7 +737,10 @@ ul#photo-gallery, ul#photo-gallery2 {
 	/* max-width: 780px; */
 	text-align: center;
 }
-
+ul#photo-gallery li,
+ul#photo-gallery2 li {
+	padding: 0 5px;
+}
 #overlay {
 	background: rgba(0, 0, 0, 0.8);
 	width: 100%;
@@ -755,7 +758,8 @@ ul#photo-gallery, ul#photo-gallery2 {
 	border-radius: 5px;
 }
 
-#photos, #photos2 {
+#photos,
+#photos2 {
 	width: 100%;
 }
 
@@ -779,9 +783,7 @@ ul#photo-gallery, ul#photo-gallery2 {
 		margin-left: 35px !important;
 		margin-right: 35px !important;
 	}
-	.section-actriz {
-		margin-top: 0px;
-	}
+
 	.masthead {
 		padding-top: 45vh;
 	}
@@ -807,35 +809,40 @@ ul#photo-gallery, ul#photo-gallery2 {
 	.meText {
 		text-align: center;
 	}
-	
-	
 }
 
 .social {
 	padding-bottom: 40px;
 }
+@media (max-height: 600px) {
+	.section-actriz {
+		margin-top: 0px;
+	}
+}
 
 /* MOBILE COMUN */
-@media (max-width: 991px ) and (min-width:581px ){
+@media (max-width: 991px) and (min-width: 581px) {
 	.section-botonera {
-    margin-top: -33vh;
-}
+		margin-top: -33vh;
+	}
 }
 @media (max-width: 768px) {
-	.bg-cover, .masthead {
+	.bg-cover,
+	.masthead {
 		min-height: 100vh;
 	}
-	.bg-galeria{
+	.bg-galeria {
 		height: 85vh;
 	}
 	.bg-galeria .masthead {
 		height: 85vh;
 	}
-	ul#photo-gallery, ul#photo-gallery2 {
+	ul#photo-gallery,
+	ul#photo-gallery2 {
 		padding-left: 0px;
 	}
-	.btns-wrapper{
-		padding-bottom:50px;
+	.btns-wrapper {
+		padding-bottom: 50px;
 	}
 	/* .slick-slider {
 		margin-left: 0px;
@@ -863,13 +870,11 @@ ul#photo-gallery, ul#photo-gallery2 {
 		margin-top: 20px;
 	}
 	.bg-actress .headerContainer {
-		padding-top: calc(8rem + 74px) !important;
+		padding-top: 80px !important;
 	}
 	.trabajos-modelo ul {
 		margin-left: 30px;
 	}
-
-
 
 	.me,
 	.galleryIndex {
@@ -904,8 +909,8 @@ ul#photo-gallery, ul#photo-gallery2 {
 		margin-bottom: 20px;
 	}
 	.diptico {
-		max-height: 500px!important;
-		min-height:0px;
+		max-height: 500px !important;
+		min-height: 0px;
 		height: 30vh;
 	}
 	.contactoBg {
@@ -915,7 +920,10 @@ ul#photo-gallery, ul#photo-gallery2 {
 		justify-content: center;
 		align-items: center;
 	}
-
+	.headerActressContainer button {
+		font-size: 1em;
+		padding: 10px 20px;
+	}
 	.footerNameContainer {
 		display: flex;
 		justify-content: center;
@@ -1000,15 +1008,13 @@ ul#photo-gallery, ul#photo-gallery2 {
 	.textAboutMe {
 		margin-top: -180px;
 	}
-	
 }
-@media(max-width: 580px){
-	.section-botonera{
-	margin-top: -31vh;
-}
+@media (max-width: 580px) {
+	.section-botonera {
+		margin-top: -31vh;
+	}
 }
 @media (max-width: 500px) {
-	
 	.headerContent {
 		width: 250px;
 	}
@@ -1028,6 +1034,9 @@ ul#photo-gallery, ul#photo-gallery2 {
 		max-height: 450px !important;
 		min-height: 320px !important;
 	}
+	.bg-actress .headerContainer {
+		padding-top: 130px !important;
+	}
 }
 
 @media (max-width: 400px) {
@@ -1037,12 +1046,11 @@ ul#photo-gallery, ul#photo-gallery2 {
 }
 @media (max-height: 700px) {
 	.section-botonera {
-		 margin-top: -6vh;
+		margin-top: -6vh;
 	}
-	.bg-modelo{
+	.bg-modelo {
 		height: 100vh;
 	}
-	
 }
 
 #goto {
@@ -1092,7 +1100,6 @@ button.slick-next:before {
 	background-size: cover;
 }
 
-
 .slick-prev,
 .slick-next {
 	font-size: 0;
@@ -1100,8 +1107,8 @@ button.slick-next:before {
 	position: absolute;
 	top: 50%;
 	display: block;
-	width: 15px!important;
-	height: 25px!important;
+	width: 15px !important;
+	height: 25px !important;
 	padding: 0;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
@@ -1114,18 +1121,23 @@ button.slick-next:before {
 }
 
 #overlay img {
-    margin-top: 20px;
+	margin-top: 20px;
 	height: 95vh;
-	width: auto!important;
+	width: auto !important;
 }
 
-
 /* Si esta colapsado */
-.btn-text[aria-expanded="false"] span.mas {display:block}
-.btn-text[aria-expanded="false"] span.menos {display:none}
+.btn-text[aria-expanded='false'] span.mas {
+	display: block;
+}
+.btn-text[aria-expanded='false'] span.menos {
+	display: none;
+}
 
 /* Si NO esta colapsado */
-.btn-text[aria-expanded="true"] span.mas {display:none}
-.btn-text[aria-expanded="true"] span.menos {display:block}
-
-
+.btn-text[aria-expanded='true'] span.mas {
+	display: none;
+}
+.btn-text[aria-expanded='true'] span.menos {
+	display: block;
+}
