@@ -81,6 +81,7 @@ body,
 	opacity: 0.5;
 	transform: translateX(100%);
 	transition: all 100ms ease-in;
+	height: 100vh;
 }
 .full-menu li {
 	font-size: 4em;
