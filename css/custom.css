@@ -799,7 +799,6 @@ ul#photo-gallery2 li {
 	.bg-cover {
 		background-image: url('../img/img-principal-mobile.jpg');
 		margin-top: -60px;
-		overflow-y: hidden;
 	}
 	.video-sobre-mi {
 		height: 250px;
@@ -831,6 +830,7 @@ ul#photo-gallery2 li {
 	.bg-cover,
 	.masthead {
 		min-height: 100vh;
+		max-height: 100vh;
 	}
 	.bg-galeria {
 		height: 85vh;
