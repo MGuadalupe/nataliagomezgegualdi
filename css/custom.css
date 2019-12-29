@@ -606,7 +606,7 @@ hr {
 	height: auto;
 }
 .galleryContainer {
-	margin-top: -10vh;
+	margin-top: 50px;
 }
 .bgGrey {
 	background: #e8e8e8;
@@ -679,8 +679,8 @@ hr {
 }
 
 .textAboutMe {
-	margin-top: -100px;
 	max-width: 1100px;
+	padding-top: 50px;
 }
 @media (max-width: 1023px) {
 	.btn-vermasMarcas {
@@ -776,9 +776,9 @@ ul#photo-gallery2 li {
 	.full-menu li {
 		font-size: 40px;
 	}
-	.videoActress {
+	/* .videoActress {
 		height: 550px;
-	}
+	} */
 	.slick-list {
 		margin-left: 35px !important;
 		margin-right: 35px !important;
@@ -1006,7 +1006,7 @@ ul#photo-gallery2 li {
 		margin-top: -80px;
 	}
 	.textAboutMe {
-		margin-top: -180px;
+		padding-top: 50px;
 	}
 }
 @media (max-width: 580px) {
