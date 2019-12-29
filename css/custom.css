@@ -976,6 +976,9 @@ ul#photo-gallery2 li {
 	.headerContent img {
 		margin-top: 0;
 	}
+	.bg-modelo .headerContent img {
+		margin-top: 100px;
+	}
 	.bg-galeria .headerContent img {
 		margin-top: 80px;
 	}
