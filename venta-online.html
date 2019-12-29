@@ -295,6 +295,17 @@
 		//show the overlay
 		$overlay.show()
 		$('nav').removeClass('fixed-top')
+    })
+    $('#photo-gallery2 a').click(function(event) {
+		event.preventDefault()
+		var imageLocation = $(this).attr('href')
+
+		//update overlay with the image linked in the link
+		$image.attr('src', imageLocation)
+
+		//show the overlay
+		$overlay.show()
+		$('nav').removeClass('fixed-top')
 	})
 
 	$('#overlay').click(function() {

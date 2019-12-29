@@ -725,14 +725,14 @@ footer hr {
 .socialMobile {
 	display: none;
 }
-#photos img {
+#photos img, #photos2 img {
 	width: 28%;
 	float: left;
 	display: block;
 	margin: 2px;
 }
 
-ul#photo-gallery {
+ul#photo-gallery, ul#photo-gallery2 {
 	list-style: none;
 	margin: 0px auto;
 	/* padding: 10px; */
@@ -758,7 +758,7 @@ ul#photo-gallery {
 	border-radius: 5px;
 }
 
-#photos {
+#photos, #photos2 {
 	width: 100%;
 }
 
@@ -831,7 +831,7 @@ ul#photo-gallery {
 	.bg-galeria .masthead {
 		height: 85vh;
 	}
-	ul#photo-gallery {
+	ul#photo-gallery, ul#photo-gallery2 {
 		padding-left: 0px;
 	}
 	.botonera-modelo {

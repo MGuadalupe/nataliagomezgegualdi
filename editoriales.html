@@ -227,12 +227,153 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+                </div>
+                <div  class="collapse" id="photos2">
+						<ul id="photo-gallery2" class='row'>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales9.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales9.jpg'); background-position: right;"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales10.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales10.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales11.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales11.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales12.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales12.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales13.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales13.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales14.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales14.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales15.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales15.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales16.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales16.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+								<a href="img/editoriales/editoriales17.jpg">
+									<div 
+									class='img-campañas'
+									style="background-image: url('img/editoriales/editoriales17.jpg');"
+									>
+									</div>
+								</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales18.jpg">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales18.jpg');"
+										>
+										</div>
+									</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales19.jpg">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales19.jpg');"
+										>
+										</div>
+									</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales20.jpg">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales20.jpg');"
+										>
+										</div>
+									</a>
+							</li>
+							<li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales21.png">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales21.png');"
+										>
+										</div>
+									</a>
+                            </li>
+                            <li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales22.jpg">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales22.jpg');"
+										>
+										</div>
+									</a>
+                            </li>
+                            <li class='col-lg-4 mt-2'>
+									<a href="img/editoriales/editoriales23.jpg">
+										<div 
+										class='img-campañas'
+										style="background-image: url('img/editoriales/editoriales23.jpg');"
+										>
+										</div>
+									</a>
+							</li>
+
+						</ul>
+					</div>
 			</div>
 			<div class="row">
 				<div class="col my-5">
 					<div class="d-flex justify-content-center">
-						<button class="btn bg-primary text-white">¡Ver más!</button>
+                            <button class="btn bg-primary text-white" data-toggle="collapse" data-target="#photos2" aria-expanded="false" aria-controls="photos2"
+                            >¡Ver más!</button>
 					</div>
 				</div>
 			</div>
@@ -331,6 +472,17 @@
 
 	//click the image and a scaled version of the full size image will appear
 	$('#photo-gallery a').click(function(event) {
+		event.preventDefault()
+		var imageLocation = $(this).attr('href')
+
+		//update overlay with the image linked in the link
+		$image.attr('src', imageLocation)
+
+		//show the overlay
+		$overlay.show()
+		$('nav').removeClass('fixed-top')
+    })
+    $('#photo-gallery2 a').click(function(event) {
 		event.preventDefault()
 		var imageLocation = $(this).attr('href')
 
