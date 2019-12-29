@@ -1034,11 +1034,11 @@ ul#photo-gallery2 li {
 		padding-top: calc(-0.8rem + 74px) !important;
 	} */
 }
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
 	.bg-modelo {
 		height: 100vh;
 	}
-}
+} */
 
 #goto {
 	cursor: pointer;
