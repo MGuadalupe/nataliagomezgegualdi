@@ -464,7 +464,7 @@ body,
 	margin-top: -94px;
 }
 .section-actriz {
-	margin-top: -80px;
+	padding-top: 50px;
 }
 @media (max-width: 1200px) {
 	.me .container {
