@@ -976,9 +976,7 @@ ul#photo-gallery2 li {
 	.headerContent img {
 		margin-top: 0;
 	}
-	.bg-modelo .headerContent img {
-		margin-top: 100px;
-	}
+
 	.bg-galeria .headerContent img {
 		margin-top: 80px;
 	}
@@ -1127,4 +1125,10 @@ button.slick-next:before {
 }
 .btn-text[aria-expanded='true'] span.menos {
 	display: block;
+}
+
+@media (min-height: 778px) and (max-width: 600px) {
+	.bg-modelo .headerContainer {
+		padding-top: 40vh !important;
+	}
 }
