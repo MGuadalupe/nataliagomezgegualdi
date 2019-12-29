@@ -1119,6 +1119,13 @@ button.slick-next:before {
 	width: auto!important;
 }
 
-.btn-text b{display:inline}
-.btn-text:not(.collapsed)  span{display:none}
-.btn-text.collapsed b {display:none}
+
+/* Si esta colapsado */
+.btn-text[aria-expanded="false"] span.mas {display:block}
+.btn-text[aria-expanded="false"] span.menos {display:none}
+
+/* Si NO esta colapsado */
+.btn-text[aria-expanded="true"] span.mas {display:none}
+.btn-text[aria-expanded="true"] span.menos {display:block}
+
+
