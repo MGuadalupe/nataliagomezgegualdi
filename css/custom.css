@@ -18,7 +18,7 @@ body,
 }
 .hambuerguerContainer {
 	overflow-x: hidden;
-	overflow-y: visible;
+	overflow-y: hidden;
 	position: relative;
 	min-height: 500px;
 }
